@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/reset.css" />
+    <link rel="stylesheet" href="../../styles/fonts.css" />
+    <link rel="stylesheet" href="../../styles/main.css" />
+
+    <title>HTML/CSS Modulul 5 - Lectia 10</title>
+    <style>
+      .three-d-example {
+        background: lightblue;
+        height: 128px;
+        width: 200px;
+        transform: perspective(900px) rotateX(60deg) scale(0.7);
+        box-shadow: 0px 10px 50px #b5b5b5;
+        transition: 0.5s ease all;
+      }
+
+      .three-d-example:hover {
+        cursor: pointer;
+        transform: rotate(0deg) scale(1) translateY(10px);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container example-page">
+      <article>
+        <h1 class="heading-primary">Perspectivă și transformări 3D</h1>
+        <p>
+          Efectuarea transformărilor CSS în spațiul 3D este puțin mai complexă.
+          Trebuie să începeți prin a configura spațiul 3D oferindu-i o
+          perspectivă, apoi trebuie să configurați modul în care elementele dvs.
+          2D se vor comporta în acel spațiu.
+        </p>
+        <h2>Perspectivă</h2>
+        <p>
+          Primul element de stabilit este perspectiva. Perspectiva este cea care
+          ne dă impresia 3D. Cu cât elementele sunt mai departe de privitor, cu
+          atât sunt mai mici. <br />
+          <a href="https://polypane.app/css-3d-transform-examples/">Exemple</a>
+        </p>
+      </article>
+
+      <section class="lesson-example">
+        <div class="three-d-example"></div>
+      </section>
+    </main>
+  </body>
+</html>
