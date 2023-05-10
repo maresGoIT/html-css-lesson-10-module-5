@@ -49,6 +49,21 @@
         color: white;
         transform: translate(-40px);
       }
+
+      .center {
+        height: 200px;
+        position: relative;
+        border: 3px solid green;
+      }
+
+      .center p {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
     </style>
   </head>
   <body>
@@ -64,6 +79,12 @@
           <em>translate, scale și rotate</em>.
         </p>
       </article>
+
+      <section class="lesson-example">
+        <div class="center">
+          <p>I am vertically and horizontally centered.</p>
+        </div>
+      </section>
 
       <section class="lesson-example">
         <div class="translate-left">Move Left -40px</div>

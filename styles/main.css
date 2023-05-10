@@ -203,9 +203,18 @@ a:focus {
   margin-top: 64px;
 }
 
+.p-md {
+  padding: 16px;
+}
+
 .note {
   background: lightblue;
   border: 1px solid #79abbb;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   padding: 16px;
+}
+
+.blue-bg {
+  color: white;
+  background: #182e6d;
 }
